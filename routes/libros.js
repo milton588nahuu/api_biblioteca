@@ -1,8 +1,6 @@
 const express = require('express');
 const router = express.Router();
-
 const Libro = require('../models/Libro');
-
 //Ruta para obtener todos los libros 
 router.get("/", async(req,res) => {
     try {
