@@ -8,7 +8,8 @@ mongoose.connect("mongodb://localhost:27017/Biblioteca",{
 const LibroSchema = new mongoose.Schema({
     titulo:String,
     autor:String
-},{ collection:'libros'});
+},
+{ collection:'libros'});
 
 const Libro = mongoose.model('Libro', LibroSchema);
 
